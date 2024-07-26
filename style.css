@@ -19,7 +19,7 @@ h1{
 
 }
 
-#button1{
+.fButton{
     display: flex;
     margin: auto;
     margin-top: 1.5em;
@@ -33,9 +33,37 @@ h1{
     box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
 }
 
-#button1:hover{
+.fButton:hover{
     background-color: hsl(240, 89%, 50%);
     box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
     padding: 1.1em;
     
+}
+
+.disablef{
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 53%);
+    color: whitesmoke;
+    box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
+    
+}
+
+.childBox{
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    color: white;
+    margin-top: 2em;
+    display: flex;
+    min-height: 100px;
+    min-width: 100px;
+    border-style: solid 2px;
+    background-color: hsl(0, 4%, 82%);
 }

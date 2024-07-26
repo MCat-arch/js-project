@@ -1,9 +1,10 @@
 body{
-    display: inline-block;
     font-style: "Arial", "sans-serif";
 }
 
 h1{
+    margin: auto;
+    margin-top: 1em;
     border-style: ridge;
     padding: 0.5em;
     justify-content: center; /* Horizontally center the content */
@@ -19,12 +20,22 @@ h1{
 }
 
 #button1{
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
     padding: 1em;
     font-size: 1rem;
     font-weight: bold;
     border-style: none;
     border-radius: 5px;
-    background-color: hsl(240, 89%, 70%);
+    background-color: hsl(240, 89%, 67%);
     color: whitesmoke;
     box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
+}
+
+#button1:hover{
+    background-color: hsl(240, 89%, 50%);
+    box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
+    padding: 1.1em;
+    
 }

@@ -24,6 +24,7 @@ h1{
     margin: auto;
     margin-top: 1.5em;
     padding: 1em;
+    margin-bottom: 1.5em;
     font-size: 1rem;
     font-weight: bold;
     border-style: none;
@@ -66,4 +67,9 @@ h1{
     min-width: 100px;
     border-style: solid 2px;
     background-color: hsl(0, 4%, 82%);
+}
+
+.div1{
+    background-color: hsl(251, 100%, 92%);
+    box-shadow: 5px 5px 10px hsl(0, 6%, 80%);
 }

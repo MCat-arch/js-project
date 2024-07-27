@@ -38,6 +38,108 @@
           <div class="div1 m-2 py-2">
         <h1>Test if this work</h1>
         <button id="button1" type="button">Check</button>
+
+    <!--Card class contain all the div element from this code to button-->
+    <div class="card">
+        <div class="game">
+        <h3 class="title"> Lets do some quiz</h3>
+        <h5>Hehe it just a fun game dont take it too serious</h5>
+        <button type="button" class="button-ok" > OK ✔</button>
+        </div>
+     <!--div card--></div>
+
+      <!--add new div class, contain this code to button-->
+      <div class="div-card2">
+      <div class="name-ask">
+        <h2>Question 1</h2>
+        <p>Lets type your name</p>
+        <label><input type="text" name="nama" placeholder="spiderman"></label>
+        <button type="button" class="button-name">Done 🤔</button>
+      </div>
+       <!--div card2--></div>
+        
+        
+      <div class="div-card3">
+      <div class="question" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#section1">Section 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">Section 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section3">Section 3</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        
+        <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+        <form id="quizForm">
+          <h5>And here is the fun part!</h5>
+          <p>Pick one of these</p>
+          <label>
+            <input type="radio" name="question1" value="paris">Paris
+          </label>
+          <label>
+            <input type="radio" name="question1" value="london">London
+          </label>
+          <label>
+            <input type="radio" name="question1" value="berlin">Berlin
+          </label>
+        </form>
+        </div>
+
+        <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+        <form id="quizForm2">
+          <br><p>Pick one of these</p>
+          <label>
+            <input type="radio" name="question1" value="paris">one
+          </label>
+          <label>
+            <input type="radio" name="question1" value="london">two
+          </label>
+          <label>
+            <input type="radio" name="question1" value="berlin">theew
+          </label>
+        </form>
+        </div>
+
+        <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+        <form id="quizForm3">
+         <br><p>Pick that suits you</p>
+          <label>
+            <input type="checkbox" name="question1" value="paris">whatever
+          </label>
+          <label>
+            <input type="checkbox" name="question1" value="london">ok
+          </label>
+          <label>
+            <input type="checkbox" name="question1" value="berlin">yeah
+          </label>
+          </form>
+        </div>
+        <button type="button" class="button-form">Then What 🤨</button>
+        
+      </div>
+      <!--div card3--></div>
+
+
+          <div class="quiz-container">
+            <h5>Question: Which image represents a car?</h5>
+            <div class="image-options">
+              <img src="image1.jpg" alt="Option 1" data-option="option1">
+              <img src="image2.jpg" alt="Option 2" data-option="option2">
+              <img src="image3.jpg" alt="Option 3" data-option="option3">
+            </div>
+            <div id="result"></div>
+          </div>
+
       </div>
         
         <script src="script.js"></script>

@@ -11,7 +11,7 @@
     <body>
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+              <a class="navbar-brand" href="#">Logo</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -35,44 +35,49 @@
               </div>
             </div>
           </nav>
-          <div class="div1 m-2 py-2">
-        <h1>Test if this work</h1>
-        <button id="button1" type="button">Check</button>
+          <div class="div1">
+            <!--add new div class, to hide the display element-->
+      
+            <div class="div-card2">
+                    <div class="first-message">
+                    <h1 class="message">Test if this work</h1>
+                    <button id="button1" type="button">Check</button>
+                    </div>
 
-    <!--Card class contain all the div element from this code to button-->
-    <div class="card">
-        <div class="game">
-        <h3 class="title"> Lets do some quiz</h3>
-        <h5>Hehe it just a fun game dont take it too serious</h5>
-        <button type="button" class="button-ok" > OK ✔</button>
-        </div>
-     <!--div card--></div>
-
-      <!--add new div class, contain this code to button-->
-      <div class="div-card2">
-      <div class="name-ask">
-        <h2>Question 1</h2>
-        <p>Lets type your name</p>
-        <label><input type="text" name="nama" placeholder="spiderman"></label>
-        <button type="button" class="button-name">Done 🤔</button>
-      </div>
-       <!--div card2--></div>
+                  <!--Card class contain first button-->
+                  <div class="card">
+                      <div class="game" id="game">
+                      <h3 class="title"> Lets do some quiz</h3>
+                      <h5>Hehe it just a fun game dont take it too serious</h5>
+                      <button type="button" class="button-ok" data-bs-toggle="collapse" data-bs-target="#div-name"> OK ✔</button>
+                      </div>
+                      
+                      
+                      <div id="div-name" class="collapse">
+                        <h2>Question 1</h2>
+                        <p>Lets type your name</p>
+                        <label><input type="text" name="nama" placeholder="spiderman"></label>
+                        <button type="button" class="button-name" onclick="{doneButton()}">Done 🤔</button>
+                      </div>
+                      <!--div card-->
+                    </div>
+            <!--div card2--></div>
         
         
       <div class="div-card3">
       <div class="question" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="nav-section">
           <div class="container-fluid">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#section1">Section 1</a>
+                <a class="nav-link" href="#section1">I</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#section2">Section 2</a>
+                <a class="nav-link" href="#section2">II</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#section3">Section 3</a>
+                <a class="nav-link" href="#section3">III</a>
               </li>
             </ul>
           </div>
@@ -124,23 +129,40 @@
           </label>
           </form>
         </div>
-        <button type="button" class="button-form">Then What 🤨</button>
+        <button type="button" class="button-form" id="button-img">Then What 🤨</button>
         
       </div>
       <!--div card3--></div>
 
-
-          <div class="quiz-container">
+      <div class="div-card-img">
             <h5>Question: Which image represents a car?</h5>
             <div class="image-options">
               <img src="image1.jpg" alt="Option 1" data-option="option1">
               <img src="image2.jpg" alt="Option 2" data-option="option2">
               <img src="image3.jpg" alt="Option 3" data-option="option3">
             </div>
-            <div id="result"></div>
-          </div>
+
+            <h5>Question: okey what you pick</h5>
+            <div class="image-opt">
+              <img src="image1.jpg" alt="Option 1" data-option="option5">
+              <img src="image2.jpg" alt="Option 2" data-option="option4">
+              <img src="image3.jpg" alt="Option 3" data-option="option6">
+           </div>
 
       </div>
+
+      <div class="result">
+        <h3>Yoo you finish that! </h3>
+        <h5>Wanna know the result?</h5>
+
+      </div>
+
+      <footer>
+        <div class="end">
+          <h3>Th 2024</h3>
+          <h5>All right reserved</h5>
+        </div>
+      </footer>
         
         <script src="script.js"></script>
     </body>

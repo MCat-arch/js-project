@@ -2,57 +2,53 @@
 
 let title = document.querySelector('.title');
 let text = document.querySelector('.text');
+const newBox = document.createElement('div');
+
 const button1 = document.getElementById('button1');
 const card = document.querySelector('.card');
-const gameDiv = document.querySelector('.game');
-const okButton = document.querySelector('.button-ok');
-const nameAskDiv = document.querySelector('.name-ask');
-const nameButton = document.querySelector('.button-name');
-const questionDiv = document.querySelector('.question');
-const divcard2 = document.querySelector('.div-card2');
+const nav = document.querySelector('nav');
+
+
+const navSection = document.getElementById('nav-section');
+const divCard3 = document.querySelector('.div-card3');
+const divCard2 = document.querySelector('.div-card2');
+const mainFrame = document.querySelector('.main-frame');
+
+const imgdiv = document.querySelector('.div-card-img');
+const buttonimg = document.getElementById('button-img');
+
+
 
 //LETS USE BOOLEAN FUNCTION ON EACH SECTION. IF DISPLAY = TRUE, 
 
 
-//button1.classList.add("fButton");
+button1.classList.add("fButton");
+card.style.visibility = 'hidden';
 
 
-/*
+
 button1.addEventListener('click', event =>{
     event.preventDefault;
+    card.scrollIntoView({ behavior: 'smooth' });
+    nav.style.visibility = 'visible';
     event.target.classList.replace("fButton", "disablef");
     card.style.visibility = 'visible';
-    newBox.classList.add('childBox');
+   // newBox.classList.add('childBox');
     document.body.append(newBox);
 });
-*/
+
+function doneButton() {
+  card.style.display = 'none';
+  divCard2.style.display = 'none';
+  navSection.style.visibility = 'visible';
+
+}
+
+buttonimg.addEventListener('click', event =>{
+  console.log("tes");
+  divCard3.style.display ='none';
+  imgdiv.style.display = 'block';
+})
+
 
 // Get the necessary elements
-
-// Show the game div when button1 is clicked
-button1.addEventListener('click', () => {
-    card.style.visibility = 'visible';
-    gameDiv.style.display = 'block';
-
-
-
-});
-
-// Show the name-ask div when the OK button is clicked
-okButton.addEventListener('click', () => {
-  nameAskDiv.style.display = 'block';
-  gameDiv.style.display = 'none';
-});
-
-// Show the question div and hide other elements when the Done button is clicked
-nameButton.addEventListener('click', () => {
-  questionDiv.style.display = 'block';
-  nameAskDiv.style.display = 'none';
-  gameDiv.style.display = 'none';
-
-  // Hide all elements that are not part of the question div
-  const otherElements = document.querySelectorAll('body > :not(.question)');
-  otherElements.forEach(element => {
-    element.style.display = 'none';
-  });
-});

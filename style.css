@@ -1,30 +1,53 @@
 body{
     font-style: "Arial", "sans-serif";
+    background-color: hsl(221, 44%, 86%);
+    margin: 0;
+    padding: 0;
+     /* Set the body height to 100% of the viewport height */
 }
 
-h1{
-    margin: auto;
-    margin-top: 1em;
-    border-style: ridge;
-    padding: 0.5em;
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content */
-    font-family: Arial, sans-serif;
+#background-img {
+  
+    display: flex;
+    z-index: -1; 
+    background-size: cover; /* This ensures the image covers the entire div */
+    background-position: center; /* This centers the image within the div */
+    background-repeat: no-repeat; 
+    height: 500px;/* This prevents the image from repeating */
+
+  }
+
+  .first-message {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    background-image: url(/assets/mainBg.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; 
+    margin: 0;
+    height: 100vh;
+    text-align: center; /* Centers the text horizontally */
+}
+
+.message {
+    position: absolute;
+    top: 25%;
     font-size: 2rem;
+    padding: 0.5em;
     font-weight: bold;
+    max-height: 50%;
     max-width: fit-content;
     color: #333;
     background-color: #f5f5f5;
-    border-radius: 0.5em;    
-
+    border-radius: 0.5em;
 }
 
-.fButton{
-    display: flex;
-    margin: auto;
-    margin-top: 1.5em;
+#button1 {
+    position: absolute;
     padding: 1em;
-    margin-bottom: 1.5em;
     font-size: 1rem;
     font-weight: bold;
     border-style: none;
@@ -34,12 +57,12 @@ h1{
     box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
 }
 
-.fButton:hover{
+#button1:hover {
     background-color: hsl(240, 89%, 50%);
     box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
     padding: 1.1em;
-    
 }
+
 
 .disablef{
     display: flex;
@@ -55,6 +78,129 @@ h1{
     box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
     
 }
+
+/*
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+    background-color: antiquewhite;
+    color: rgb(73, 51, 24);
+}
+
+.card h3{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(181, 130, 0, 0.736);
+    padding: 0.5em;
+    background-color: rgba(20, 10, 49, 0.933);
+}
+
+#div-name{
+    margin-top: 2.5em;
+}*/
+
+/* Card container */
+.card {
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+    width: 97%; /* Adjust width as needed */
+    background-color: antiquewhite;
+    color: rgb(73, 51, 24);
+    border: 1px solid rgb(235, 204, 165); /* Add border for retro look */
+    border-bottom: none;
+    border-top: none;
+    border-radius: 10px; /* Slightly rounded corners */
+    padding: 2em; /* Add padding for inner spacing */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+}
+
+/* Headings */
+.card h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(181, 130, 0, 0.736);
+    padding: 0.5em;
+    background-color: rgba(20, 10, 49, 0.933);
+    margin-bottom: 1em;
+    border-radius: 5px; /* Match border radius */
+}
+
+.card h5 {
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(73, 51, 24);
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px; /* Match border radius */
+}
+
+/* Paragraphs */
+.card p {
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    color: rgb(73, 51, 24);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Buttons */
+.button-ok, .button-name {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: hsl(240, 89%, 67%);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+.button-ok:hover, .button-name:hover {
+    background-color: hsl(240, 89%, 50%);
+    box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
+    padding: 0.6em 1.1em; /* Slightly increase padding on hover */
+}
+
+/* Input fields */
+input[type="text"] {
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    color: rgb(73, 51, 24);
+    border: 2px solid rgb(73, 51, 24);
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+/* Adjusting spacing for collapse div */
+#div-name {
+    width: 100%;
+    text-align: center; /* Center text within collapse div */
+}
+
 
 .childBox{
     text-align: center;
@@ -72,4 +218,13 @@ h1{
 .div1{
     background-color: hsl(251, 100%, 92%);
     box-shadow: 5px 5px 10px hsl(0, 6%, 80%);
+}
+
+.div-card-img{
+    display: none;
+}
+
+
+#nav-section{
+    visibility: hidden;
 }

@@ -1,0 +1,19 @@
+{
+  "name": "js-project",
+  "version": "1.0.0",
+  "description": "this contain small project",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MCat-arch/js-project.git"
+  },
+  "author": "ME",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MCat-arch/js-project/issues"
+  },
+  "homepage": "https://github.com/MCat-arch/js-project#readme"
+}

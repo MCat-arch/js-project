@@ -65,9 +65,9 @@
         
         
       <div class="div-card3">
-      <div class="question" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+      <div data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="nav-section">
+        <nav class="navbar navbar-expand fixed-top" id="nav-section">
           <div class="container-fluid">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -84,48 +84,48 @@
         </nav>
 
         
-        <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+        <div id="section1">
         <form id="quizForm">
           <h5>And here is the fun part!</h5>
           <p>Pick one of these</p>
           <label>
-            <input type="radio" name="question1" value="paris">Paris
+            <input type="radio" name="question1" value="incorrect">Paris
           </label>
           <label>
-            <input type="radio" name="question1" value="london">London
+            <input type="radio" name="question1" value="correct">London
           </label>
           <label>
-            <input type="radio" name="question1" value="berlin">Berlin
+            <input type="radio" name="question1" value="incorrect">Berlin
           </label>
         </form>
         </div>
 
-        <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+        <div id="section2">
         <form id="quizForm2">
           <br><p>Pick one of these</p>
           <label>
-            <input type="radio" name="question1" value="paris">one
+            <input type="radio" name="question2" value="correct">one
           </label>
           <label>
-            <input type="radio" name="question1" value="london">two
+            <input type="radio" name="question2" value="incorrect">two
           </label>
           <label>
-            <input type="radio" name="question1" value="berlin">theew
+            <input type="radio" name="question2" value="incorrect">theew
           </label>
         </form>
         </div>
 
-        <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+        <div id="section3">
         <form id="quizForm3">
          <br><p>Pick that suits you</p>
           <label>
-            <input type="checkbox" name="question1" value="paris">whatever
+            <input type="checkbox" name="question3" value="correct">whatever
           </label>
           <label>
-            <input type="checkbox" name="question1" value="london">ok
+            <input type="checkbox" name="question3" value="correct">ok
           </label>
           <label>
-            <input type="checkbox" name="question1" value="berlin">yeah
+            <input type="checkbox" name="question3" value="incorrect">yeah
           </label>
           </form>
         </div>
@@ -135,18 +135,18 @@
       <!--div card3--></div>
 
       <div class="div-card-img">
-            <h5>Question: Which image represents a car?</h5>
+            <h5>Question: Which image is AI generated?</h5>
             <div class="image-options">
-              <img src="image1.jpg" alt="Option 1" data-option="option1">
-              <img src="image2.jpg" alt="Option 2" data-option="option2">
-              <img src="image3.jpg" alt="Option 3" data-option="option3">
+              <img src="/assets/image1.jpg" alt="Option 1" data-option="0" data-group="1">
+              <img src="/assets/image2.jpg" alt="Option 2" data-option="10" data-group="1">
+              <img src="/assets/image3.jpg" alt="Option 3" data-option="0"  data-group="1">
             </div>
 
-            <h5>Question: okey what you pick</h5>
+            <h5>Clue: If we fall, we fall together</h5>
             <div class="image-opt">
-              <img src="image1.jpg" alt="Option 1" data-option="option5">
-              <img src="image2.jpg" alt="Option 2" data-option="option4">
-              <img src="image3.jpg" alt="Option 3" data-option="option6">
+              <img src="/assets/rain.jpg" alt="Option 1" data-option="10"  data-group="2">
+              <img src="/assets/one-sided-love.jpg" alt="Option 2" data-option="0" data-group="2">
+              <img src="/assets/cats.jpg" alt="Option 3" data-option="0" data-group="2">
            </div>
 
       </div>
@@ -154,7 +154,17 @@
       <div class="result">
         <h3>Yoo you finish that! </h3>
         <h5>Wanna know the result?</h5>
+        <button type="button" id="finish">🏃‍♀️</button>
 
+      </div>
+
+      <div class="div-last">
+        <img src="/assets/4e177d7b41772d35a54f9bd5e5f06806.jpg" alt="">
+        <h3>CONGRATULATIONS</h3>
+        <h5><span id="nama"> </span> You prove yourself that you've got a spare time</h5>
+        <p>Your score is: <span id="score"></span></p>
+
+        <h6>Take a good care, See ya</h6>
       </div>
 
       <footer>

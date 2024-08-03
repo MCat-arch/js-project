@@ -33,15 +33,17 @@ body{
 }
 
 .message {
+    font-family: "Playfair Display";
     position: absolute;
-    top: 25%;
+    top: 15%;
     font-size: 2rem;
     padding: 0.5em;
     font-weight: bold;
     max-height: 50%;
     max-width: fit-content;
-    color: #333;
-    background-color: #f5f5f5;
+    color: #d5d1d9;
+    background-color: #42461d;
+    box-shadow: 0px 10px 5px rgb(212, 212, 207) ;
     border-radius: 0.5em;
 }
 
@@ -52,13 +54,13 @@ body{
     font-weight: bold;
     border-style: none;
     border-radius: 5px;
-    background-color: hsl(240, 89%, 67%);
+    background-color: hsl(240, 28%, 42%);
     color: whitesmoke;
     box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
 }
 
 #button1:hover {
-    background-color: hsl(240, 89%, 50%);
+    background-color: hsl(212, 53%, 50%);
     box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
     padding: 1.1em;
 }
@@ -79,48 +81,20 @@ body{
     
 }
 
-/*
-.card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    height: 100vh;
-    background-color: antiquewhite;
-    color: rgb(73, 51, 24);
-}
-
-.card h3{
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(181, 130, 0, 0.736);
-    padding: 0.5em;
-    background-color: rgba(20, 10, 49, 0.933);
-}
-
-#div-name{
-    margin-top: 2.5em;
-}*/
 
 /* Card container */
 .card {
-    display: flex;
     flex-direction: column; /* Ensure elements stack vertically */
     align-items: center;
     justify-content: center;
     margin: auto;
-    height: 100vh;
-    width: 97%; /* Adjust width as needed */
+    height: 100vh; /* Adjust width as needed */
     background-color: antiquewhite;
     color: rgb(73, 51, 24);
     border: 1px solid rgb(235, 204, 165); /* Add border for retro look */
     border-bottom: none;
     border-top: none;
-    border-radius: 10px; /* Slightly rounded corners */
+    border-radius: 5px; /* Slightly rounded corners */
     padding: 2em; /* Add padding for inner spacing */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
 }
@@ -169,7 +143,7 @@ body{
     border: none;
     border-radius: 5px;
     padding: 0.5em 1em;
-    margin: 0.5em;
+    margin: auto;
     cursor: pointer;
     box-shadow: 2px 2px 5px hsl(0, 4%, 49%);
     transition: background-color 0.3s, padding 0.3s;
@@ -227,4 +201,231 @@ input[type="text"] {
 
 #nav-section{
     visibility: hidden;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #2c3e50; /* Dark retro color */
+}
+
+#nav-section .nav-item .nav-link {
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#nav-section .nav-item .nav-link:hover {
+    color: #e74c3c;
+}
+
+/* Sections */
+#section1, #section2, #section3 {
+    padding: 50px 20px;
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Section Colors */
+#section1 {
+    background-color: #16a085; /* Retro green */
+    color: #000;
+    
+}
+
+#section2 {
+    background-color: #f39c12; /* Retro yellow */
+    color: #000;
+    
+}
+
+#section3 {
+    background-color: #7f8c8d; /* Retro gray */
+    color: #000;
+    
+}
+
+/* Forms */
+form {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Buttons */
+.button-form {
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #2980b9; /* Retro blue */
+    color: whitesmoke;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.button-form:hover {
+    background-color: #3498db;
+}
+
+/* Div Card Image */
+.div-card-img {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.div-card-img h5 {
+    margin: 2.5em;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(73, 51, 24);
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px; /* Match border radius */
+}
+
+.image-options img, .image-opt img {
+    width: 256px;
+    height: 256px;
+    margin: 2em;
+    border-radius: 5px;
+    box-shadow: 4px 6px 10px hsl(0, 0%, 47%);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-options img:hover, .image-opt img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Result Container */
+.result {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Retro black background */
+    color: #0c0c0c; /* White text */
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    max-width: 600px;
+    margin: 20px auto; /* Center the div and add margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Heading Styles */
+.result h3 {
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.result h5 {
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+#finish {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #2980b9; /* Retro blue */
+    color: whitesmoke;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#finish:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+}
+
+/* Container for the final result */
+.div-last {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the image */
+.div-last img {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 50%; /* Make the image circular */
+    border: 5px solid #fff; /* Add a white frame */
+    margin-bottom: 20px;
+}
+
+/* Styling for the headings */
+.div-last h3 {
+    font-family: 'Playfair Display', serif; /* Elegant font style */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.div-last h5 {
+    font-family: 'Playfair Display', serif; /* Elegant font style */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.div-last p {
+    font-family: 'Playfair Display', serif; /* Elegant font style */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.div-last h6 {
+    font-family: 'Playfair Display', serif; /* Elegant font style */
+    font-size: 1rem;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .end h3, footer .end h5 {
+    margin: 5px 0;
 }
